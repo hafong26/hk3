@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>The Coffee House</title>
+    <style>
+        header {
+            position: relative;
+        }
+        
+        header .banner {
+            filter: brightness(30%);
+            position: absolute;
+            z-index: -1;
+            height: 100vh;
+        }
+        
+        .list-navbar li {
+            display: inline-block;
+            margin: 90px 0;
+        }
+        
+        .list-navbar a {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 27px;
+            margin-right: 90px;
+            font-family: 'Amatic SC', cursive;
+        }
+        
+        .list-navbar a:hover {
+            color: white;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            filter: brightness(200%);
+            border: 2px solid #7042246b;
+            margin: 50px 70px 0 100px;
+            padding: 10px 0;
+        }
+        
+        .logo:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        .bx-search {
+            font-size: 40px;
+            color: white;
+        }
+        
+        .logan {
+            font-family: 'Qwigley', cursive;
+            position: absolute;
+            font-size: 130px;
+            letter-spacing: 5px;
+            top: 360px;
+            left: 160px;
+            width: max-content;
+            color: #b97344;
+        }
+        
+        .logan span:last-child {
+            font-size: 25px;
+            letter-spacing: 17px;
+            position: absolute;
+            color: #666;
+            left: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            width: max-content;
+        }
+        
+        .list-icon {
+            position: absolute;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            left: 1810px;
+            width: max-content;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), #00000000 90%);
+            padding: 20px 40px;
+            height: 100vh;
+        }
+        
+        .list-icon i {
+            font-size: 30px;
+            margin: 35px 0;
+            opacity: 0.4;
+            color: white;
+        }
+        
+        .list-icon i:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header class="row gx-0">
+            <img class="logo col-2" src="images/logo.png" alt="">
+            <ul class="list-navbar col-8">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Câu chuyện</a></li>
+                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="#">Đặt hàng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+            <img class="banner w-100" src="images/banner.jpg">
+            <div class="logan">
+                <span>The Coffee House</span><br>
+                <span>
+                    Hương vị tạo nên thương hiệu
+                </span>
+            </div>
+            <div class="list-icon">
+                <i class='bx bxl-tiktok'></i>
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-youtube'></i>
+                <i class='bx bxl-twitter'></i>
+            </div>
+        </header>
+    </div>
+</body>
+
+</html>
