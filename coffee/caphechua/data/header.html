@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        header {
+            background: #000 !important;
+            padding: 15px 0;
+        }
+        
+        header .nav-link {
+            color: white;
+        }
+        
+        header .nav-link:hover,
+        header .nav-link:active {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="../index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <div class="logo-border mx-xxl-3">
+                    <img src="../images/coffee-logo.png" alt="">
+                </div>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 px-md-2 px-xxl-4" href="../webpages/order.html">Đặt hàng</a></li>
+                <li><a class="nav-link px-2 px-md-2 px-xxl-4" href="../webpages/blog.html">Tin tức</a></li>
+                <li><a class="nav-link px-2 px-md-2 px-xxl-4" href="">Cửa hàng</a></li>
+                <li><a class="nav-link px-2 px-md-2 px-xxl-4" href="">Khuyến mãi</a></li>
+                <li><a class="nav-link px-2 px-md-2 px-xxl-4" href="../webpages/careers.html">Tuyển dụng</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-2">
+                <input type="search" class="form-control form-control-dark" placeholder="Tìm kiếm..." aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Đăng nhập</button>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal2">Đăng ký</button>
+            </div>
+            <!-- <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle btn btn-warning" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="">Nguyễn Văn Hào </span>
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <div class="modal fade modal-signin py-5" id="exampleModal" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-5 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h5 class="modal-title">Modal title</h5> -->
+                    <h2 class="fw-bold mb-0">Đăng nhập</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-5 pt-0">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Số điện thoại hoặc địa chỉ gmail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Mật khẩu</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Đăng nhập</button>
+                        <small class="text-muted">Nhấp vào Đăng nhập, bạn sẽ đồng ý với các điều khoản sử dụng.</small>
+                        <hr class="my-4">
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                            Đăng nhập với Google
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                            Đăng nhập với Facebook
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-signin py-5" id="exampleModal2" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-5 shadow">
+                <div class="modal-header p-5 pb-4 border-bottom-0">
+                    <!-- <h5 class="modal-title">Modal title</h5> -->
+                    <h2 class="fw-bold mb-0">Đăng ký</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                    <form class="">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Số điện thoại hoặc địa chỉ gmail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Mật khẩu</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Nhập lại mật khẩu</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-danger" type="submit">Đăng ký</button>
+                        <small class="text-muted">Nhấp vào Đăng ký, bạn sẽ đồng ý với các điều khoản sử dụng.</small>
+                        <hr class="my-4">
+                        <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                            Đăng ký với Google
+                        </button>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                            Đăng ký với Facebook
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
