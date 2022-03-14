@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            position: relative;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            max-height: 100vh;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        li {
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li id="li">Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Login</li>
+        </nav>
+        <video autoplay loop width="100%" src="./video.mp4" id="video"></video>
+    </header>
+    <script>
+        alert("Click vào màn hình để phát")
+        var audio = new Audio('./clip.mp3')
+        var video = document.getElementById("video")
+        document.onclick = function () {
+            audio.play()
+            video.play()
+        }
+    </script>
+</body>
+
+</html>

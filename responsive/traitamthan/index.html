@@ -1,0 +1,307 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://github.com/hafong26/library/blob/main/images/zalo/zalo.jpg?raw=true" type="image/x-icon">
+    <title>Phòng chứa bệnh nhân</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --bg-dark: #000;
+            --bg-white: #fff;
+        }
+        
+        body {
+            font-family: 'Roboto Mono', monospace;
+            height: 90vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title {
+            text-align: center;
+            font-size: 50px;
+            padding: 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul {
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            padding: 10px 5px;
+        }
+        /* Button Toggle */
+        
+        #btn-darkmode {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 40px;
+            border: 2px solid #000;
+            margin-bottom: 60px;
+        }
+        
+        #btn-darkmode i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+        
+        #btn-darkmode:active {
+            cursor: pointer;
+        }
+        /* Class Default */
+        
+        .bg-white {
+            background: white;
+            color: black;
+            transition: .5s;
+        }
+        
+        .bg-black {
+            background: black !important;
+            color: white !important;
+        }
+        
+        .d-none {
+            display: none;
+        }
+        
+        .d-block {
+            display: block;
+        }
+        /* Marquee */
+        
+        main marquee {
+            position: absolute;
+            font-size: 30px;
+            font-family: 'Alfa Slab One', cursive;
+        }
+        
+        .a1 {
+            bottom: 0;
+        }
+        
+        .a2 {
+            top: 30%;
+            transform: rotate(45deg);
+            right: -100px;
+            width: 150%;
+        }
+        
+        .a3 {
+            left: -50px;
+            transform: rotate(-30deg);
+            bottom: 500px;
+        }
+        /* Text Jump */
+        
+        #text-jump {
+            text-align: center;
+            font-family: 'Bungee Inline', cursive;
+        }
+        
+        #text-jump span {
+            animation: jump .4s linear infinite;
+            padding: 20px;
+            position: relative;
+            font-size: 35px;
+        }
+        
+        @keyframes jump {
+            0%,
+            100% {
+                top: 0;
+            }
+            33% {
+                top: 1em;
+            }
+            66% {
+                top: -1em;
+            }
+        }
+        /* Hit Box */
+        
+        .hitbox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .5s;
+        }
+        
+        .hitbox img {
+            width: 200px;
+            border-radius: 50%;
+        }
+        
+        .hitbox img:active {
+            cursor: pointer;
+        }
+        
+        .hitbox-animation {
+            animation: hitbox 1s infinite ease;
+        }
+        
+        @keyframes hitbox {
+            0%,
+            100% {
+                box-shadow: 0 0 0 #fff;
+            }
+            25% {
+                transform: rotate(0deg);
+            }
+            50% {
+                box-shadow: 0 0 0 20px #fff;
+                transform: rotate(-70deg);
+            }
+            75% {
+                transform: rotate(0deg);
+            }
+        }
+        /* Responsive */
+        
+        @media (max-width:1000px) {
+            #text-jump {
+                margin: 10px 0;
+            }
+            #text-jump span {
+                font-size: 20px;
+                padding: 0 5px;
+            }
+            @keyframes jump {
+                0%,
+                100% {
+                    top: 0;
+                }
+                33% {
+                    top: 1.5em;
+                }
+                66% {
+                    top: -0.5em;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn-darkmode" class='bg-white bg-black' onclick="ChangeColor()" name="toggleColor">
+        <i class='bx bxs-show'></i>
+    </div>
+    <header>
+        <div id="text-jump" class="bg-white" name="toggleColor">
+            <span style="animation-delay: 0s;">T</span>
+            <span style="animation-delay: 0.0833333s;">r</span>
+            <span style="animation-delay: 0.166667s;">ạ</span>
+            <span style="animation-delay: 0.25s;">i</span>
+            <span style="animation-delay: 0.333333s;"> </span>
+            <span style="animation-delay: 0.416667s;">t</span>
+            <span style="animation-delay: 0.5s;">â</span>
+            <span style="animation-delay: 0.583333s;">m</span>
+            <span style="animation-delay: 0.666667s;"></span>
+            <span style="animation-delay: 0.75s;">t</span>
+            <span style="animation-delay: 0.833333s;">h</span>
+            <span style="animation-delay: 0.916667s;">ầ</span>
+            <span style="animation-delay: 1s;">n</span>
+            <span style="animation-delay: 1.08333s;"></span>
+            <span style="animation-delay: 1.16667s;"></span>
+        </div>
+        <nav name="toggleColor" id="nav" class="bg-black bg-white">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hitbox" id="move">
+        <img id="img" src="https://github.com/hafong26/library/blob/main/images/zalo/zalo.jpg?raw=true" alt="">
+    </div>
+
+    <main>
+        <marquee direction="right">
+            Tải lại trang để thay đổi tốc độ chạy của chữ
+        </marquee>
+        <marquee class="a1">
+            Nhấp vào biểu tượng "con mắt" để bật Dark Mode
+        </marquee>
+        <marquee class="a2">
+            Click vào hình bộ xương để phát nhạc, Click vào hình bộ xương để phát nhạc
+        </marquee>
+        <marquee class="a3" direction="right">
+            Click vào hình bộ xương để phát nhạc, Click vào hình bộ xương để phát nhạc
+        </marquee>
+    </main>
+    <script>
+        var btnColor = document.getElementById("btn-darkmode")
+        var icon = document.querySelectorAll('#btn-darkmode i')
+        var toggleColor = document.getElementsByName("toggleColor")
+        var nav = document.getElementById("nav")
+        var marquee = document.querySelectorAll('main marquee')
+        var img = document.getElementById("img")
+        var audio = new Audio("./intheend.mp3")
+        img.onclick = function() {
+            img.classList.toggle("hitbox-animation")
+            setInterval(moveRandom, 1000)
+            audio.play()
+        }
+        for (i = 0; i < marquee.length; i++) {
+            random = Math.floor(Math.random() * 100)
+            marquee[i].setAttribute('scrollamount', random)
+            console.log(random)
+
+        }
+
+        function ChangeColor() {
+            document.body.classList.toggle("bg-black")
+
+            nav.classList.toggle("d-none")
+            for (i = 0; i < toggleColor.length; i++) {
+                toggleColor[i].classList.toggle("bg-black")
+            }
+        }
+
+        function moveRandom() {
+            var move = document.getElementById("move")
+            var x = Math.floor(Math.random() * 100)
+            var y = Math.floor(Math.random() * 100)
+            Object.assign(move.style, {
+                left: x + "%",
+                top: y + "%"
+            })
+        }
+    </script>
+
+
+</body>
+
+</html>
