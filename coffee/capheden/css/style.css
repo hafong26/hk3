@@ -1,0 +1,91 @@
+header {
+    position: relative;
+}
+
+header .banner {
+    filter: brightness(30%);
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+}
+
+.list-navbar li {
+    display: inline-block;
+    margin: 90px 0;
+}
+
+.list-navbar a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 27px;
+    margin-right: 90px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.list-navbar a:hover {
+    color: white;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    filter: brightness(200%);
+    border: 2px solid #7042246b;
+    margin: 50px 70px 0 100px;
+    padding: 10px 0;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.bx-search {
+    font-size: 40px;
+    color: white;
+}
+
+.logan {
+    font-family: 'Qwigley', cursive;
+    position: absolute;
+    font-size: 130px;
+    letter-spacing: 5px;
+    top: 360px;
+    left: 160px;
+    width: max-content;
+    color: #b97344;
+}
+
+.logan span:last-child {
+    font-size: 25px;
+    letter-spacing: 17px;
+    position: absolute;
+    color: #666;
+    left: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    width: max-content;
+}
+
+.list-icon {
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    left: 1810px;
+    width: max-content;
+    background: linear-gradient( #fff2, #00000000 70%);
+    padding: 20px 40px;
+    height: 100vh;
+}
+
+.list-icon i {
+    font-size: 30px;
+    margin: 35px 0;
+    opacity: 0.4;
+    color: white;
+}
+
+.list-icon i:hover {
+    cursor: pointer;
+    opacity: 1;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Website</title>
+    <style>
+        body {
+            background: linear-gradient(#000a, #000a), url('./background.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        a {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            padding: 15px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+            border-bottom: 1px solid #fff;
+        }
+        
+        img {
+            margin-right: 12px;
+            filter: invert(100%);
+            transition: .3s;
+        }
+        
+        a:hover img {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./caphechua">
+        <img src="./cup.png" alt="">
+        <span>Cà phê chùa</span>
+    </a>
+    <a href="./capheden">
+        <img src="./cup.png" alt="">
+        <span>Black Coffee</span>
+    </a>
+    <a href="./skycoffee/">
+        <img src="./cup.png" alt="">
+        <span>Sky Coffee</span>
+    </a>
+
+</html>
