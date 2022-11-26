@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial
+}
+
+ul,
+p {
+    margin: 0 !important;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+.logo {
+    max-width: 5%;
+    min-width: 80px;
+    padding: 15px;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.btn-menu {
+    padding: 10px;
+}
+
+.btn-menu:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.btn-menu div {
+    width: 40px;
+    height: 4px;
+    background: black;
+    margin: 8px auto;
+}
+
+.banner {
+    width: 100% !important;
+}
+
+.lienhe {
+    background: #f00d;
+    padding: 30px 5vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lienhe p {
+    font-size: 2vw;
+    width: 70%;
+}
+
+.lienhe span {
+    font-weight: bold;
+}
+
+.lienhe button {
+    padding: 15px;
+    min-width: 150px;
+    width: 30%;
+    font-size: 1vw;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+
+.lienhe button:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* Content */
+
+.dichvu {
+    height: 100vh;
+    text-align: center;
+}
+
+.dichvu1 {
+    padding: 50px;
+}
+
+.dichvu1 p {
+    font-size: 1vw;
+    color: #0009;
+}
+
+.dichvu1 b {
+    color: #f00d;
+}
+
+.dichvu2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.dichvu2 div {
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid #f005;
+    margin: 20px;
+}
+
+.dichvu2 img {
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-radius: 50%;
+    background: #f33;
+}
+
+.dichvu2 h2 {
+    margin-bottom: 20px;
+}
+
+.dichvu2 p {
+    color: #0007;
+    line-height: 25px;
+}
+
+
+/* Responsive */
+
+
+
+@media (max-width:991.98px) {
+    header {
+        padding: 0;
+        margin: 0;
+    }
+    header nav {
+        display: none;
+    }
+    .logo {
+        display: block;
+    }
+    .lienhe p {
+        font-size: 3vw;
+    }
+    .lienhe button {
+        font-size: 2.3vw;
+    }
+    .lienhe {
+        padding: 5px 20px;
+    }
+    .lienhe button {
+        min-width: 10px;
+        padding: 5px;
+    }
+    .dichvu1 {
+        padding: 20px;
+    }
+    .dichvu1 p {
+        font-size: 3vw;
+    }
+    .dichvu2 {
+        display: block;
+        padding: 15px;
+    }
+    .btn-menu{
+    margin-right:5px;
+    }
+}
+
+@media (min-width:991.98px) {
+    .btn-menu {
+        display: none;
+    }
+}
+
+
+
+@media (min-width:1399.98px) {
+    .banner {
+        height: 75vh;
+    }
+}
